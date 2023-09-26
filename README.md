@@ -1,2 +1,21 @@
-# Auto-Exercised_Parisian_Option_Pricing_and_Hedging
-Mainly utilized Monte Carlo simulation to price auto-exercised Parisian options, and calculate their Greeks.
+# Automatically Exercised Parisian Options’ Pricing and Hedging Strategies (Paper in Chinese)
+
+## Descripiton
+* Utilized Monte Carlo simulation to price auto-exercised Parisian options and calculate their Greeks.
+* Analyzed the efficiency of variance reduction procedures, including Quasi-Monte Carlo simulation based on low-discrepancy sequence and the antithetic variable technique.
+* Compared dynamic delta hedging strategy with static replication hedging strategy.
+
+## Abstract
+* In the financial market, options are widely used and have their place for a variety of financial market participants. In particular, the properties of some exotic options can meet the needs of some special groups.
+* The auto-exercised Parisian option, a kind of exotic option, is an extension of the Parisian option. It has the nature of the Parisian option but is more "mild" than the Parisian option since the drastic fluctuation near the barrier price has been mitigated to a certain degree. Therefore, it is an ideal tool to hedge the barrier-family options income structure. Besides, its price is lower than the European option under the same circumstances, because of the nature of its automatically exercising. In this way, it is a more stable speculative tool than vanilla options.
+* The main purpose of this paper is to use the Monte Carlo simulation to price the auto-exercised Parisian option and calculate its Greeks, and then come up with a suitable hedging strategy based on the simulations above. To achieve this goal efficiently, this paper also analyzes the efficiency of some variance reduction procedures, including Quasi-Monte Carlo simulation based on Low-discrepancy sequence and the antithetic variable technique.
+* Besides, it is necessary to study the impact of the iterative process of random number series on the correlation between the series because of the characteristic of path-dependent exotic options. Finally, the results of the Monte Carlo simulation often suffer from severe fluctuations, so this paper also discusses and uses the smoothing method which can guarantee accuracy and obtain smooth results at the same time.
+* The innovation of this paper is as follows: on the one hand, this paper discusses the influence of  Low-discrepancy sequence processing and the method of transforming uniform distribution of   interval into standard normal distribution random variables on the properties of Low-discrepancy sequence from two perspectives of path-dependent option and non-path dependent option pricing in-depth, which rectify the stereotype of Quasi-Monte Carlo simulation. On the other hand, this paper proposes some improved Monte Carlo algorithms, including the vectorization algorithm to determine the knock-out event of auto-exercised Parisian options and the performance problem of Python loop structure. Finally, this paper also makes a thorough summary of the current option pricing framework. All of the issues above were rarely paid attention to before.
+* Although the title of this paper is “Auto-exercised Parisian Option Pricing and Hedging Strategies”, it provides a complete option pricing framework. Meanwhile, it also gives a comprehensive introduction to path-dependent option pricing and Greeks calculation details by Monte Carlo simulation. Therefore, if there is a need to adopt other methods for pricing other options, this paper could be as a reference to a certain degree.
+
+## Main Reference
+* <a style='color: black;' href='https://www-2.rotman.utoronto.ca/~hull/ofod/index.html' target='_blank'>https://www-2.rotman.utoronto.ca/~hull/ofod/index.html</a>
+* <a style='color: black;' href='http://www.tup.tsinghua.edu.cn/bookscenter/book_06589001.html' target='_blank'>http://www.tup.tsinghua.edu.cn/bookscenter/book_06589001.html</a>
+* <a style='color: black;' href='https://link.springer.com/book/9780387401010' target='_blank'>https://link.springer.com/book/9780387401010</a>
+* <a style='color: black;' href='https://link.springer.com/book/10.1007/978-0-387-21617-1' target='_blank'>https://link.springer.com/book/10.1007/978-0-387-21617-1</a>
+* <a style='color: black;' href='https://www.wiley.com/en-us/Paul+Wilmott+Introduces+Quantitative+Finance,+2nd+Edition-p-9781118836798' target='_blank'>https://www.wiley.com/en-us/Paul+Wilmott+Introduces+Quantitative+Finance,+2nd+Edition-p-9781118836798</a>
